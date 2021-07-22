@@ -1,0 +1,53 @@
+.courses_page, .materials_page {
+  display: flex;
+  flex-direction: column;
+  min-width: 500px;
+  align-items: center;
+}
+.courses_page .material, .materials_page .material {
+  padding: 20px 30px;
+  background-color: #e2e2e2;
+  border-radius: 15px;
+  width: 100%;
+}
+.courses_page .material .name, .materials_page .material .name {
+  font-size: 28px;
+  text-transform: capitalize;
+}
+.courses_page .material .description, .materials_page .material .description {
+  margin-top: 10px;
+  text-indent: 10px;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+.courses_page .material .bottom_row, .materials_page .material .bottom_row {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.courses_page .material .creator, .materials_page .material .creator {
+  border: 2px solid #323232;
+  padding: 7px 10px;
+  border-radius: 20px;
+}
+.courses_page .material .date, .materials_page .material .date {
+  border: 2px solid #e8020e;
+  padding: 7px 10px;
+  border-radius: 20px;
+}
+.courses_page .btn_createCourse, .courses_page .btn_createMaterial, .materials_page .btn_createCourse, .materials_page .btn_createMaterial {
+  margin-top: 20px;
+  border-radius: 20px;
+  padding: 12px 15px;
+  font-size: 18px;
+  background-color: #f5832e;
+  color: white;
+  font-weight: 700;
+  width: 40%;
+}
+.courses_page .btn_createCourse:hover, .courses_page .btn_createMaterial:hover, .materials_page .btn_createCourse:hover, .materials_page .btn_createMaterial:hover {
+  background-color: #d96e17;
+}
+.courses_page .material + .material, .materials_page .material + .material {
+  margin-top: 20px;
+}
